@@ -92,6 +92,7 @@ html {
 /* HEADER */
 
 .container-header-inner {
+    position: relative;
     margin-left: 100px;
     height: 55px;
     display: flex;
@@ -161,6 +162,69 @@ html {
     transition: all linear .2s;
 }
 
+.container-header-slider-lines {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    row-gap: 12px;
+    position: absolute;
+    bottom: -480%;
+    right: 5.5%;
+}
+
+.container-header-slider-lines-item {
+    width: 7px;
+    height: 2px;
+    background-color: var(--gray_color_2);
+}
+
+.container-header-slider-lines-item.first {
+    text-align-last: left;
+    width: 17px;
+    background-color: var(--white_color);
+}
+
+.container-header-slider-buttons {
+    display: flex;
+    gap: 25px;
+    position: absolute;
+    right: 5.5%;
+    bottom: -960%;    
+}
+
+.container-header-slider-previous {
+    padding-bottom: 7px;
+    color: rgba(157, 164, 189, 0.60);
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 1.1px;
+    border-bottom: 1px solid rgba(157, 164, 189, 0.60);
+    cursor: pointer;
+}
+.container-header-slider-previous:hover {
+    color: var(--white_color);
+    border-bottom: 1px solid var(--white_color);
+}
+
+.container-header-slider-next {
+    padding-bottom: 7px;
+    color: rgba(157, 164, 189, 0.60);
+    text-align: right;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 1.1px;    
+    border-bottom: 1px solid rgba(157, 164, 189, 0.60);
+    cursor: pointer;
+}
+.container-header-slider-next:hover {
+    color: var(--white_color);
+    border-bottom: 1px solid var(--white_color);
+}
+
 /* SECTION: HERO */
 
 .section-hero {
@@ -211,7 +275,6 @@ html {
     line-height: 30px; /* 166.667% */
     letter-spacing: 0.36px;
 }
-
 
 /* SECTION: ABOUT US */
 
